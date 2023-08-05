@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: rgb(211, 182, 182);
+  margin: 20px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  padding: 10px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f3f373;
+  border-radius: 20px;
+  margin: 5px;
+}
+ul li:hover {
+  background: #c0c0c0;
+}
+#list input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+#list label {
+  position: relative;
+  cursor: pointer;
+}
+
+#list label:before {
+  content: "";
+
+  background-color: transparent;
+  border: 2px solid #000203;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+}
+#list input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+#list input:checked + label:before {
+  background: #2c4554;
+}
+#list input:checked + label {
+  text-decoration: line-through;
+}
+.delete {
+  height: 30px;
+
+  border-radius: 3px;
+  transition: all 0.6s;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.add-task {
+  width: 500px;
+  outline: none;
+  font-size: 15px;
+  padding: 11px;
+  border: 1px solid #f3f3f3;
+  margin-bottom: 3px;
+  border-radius: 30px;
+}
+
+#input-container {
+  display: flex;
+}
+#addTask {
+  height: 47px;
+  width: 60px;
+  border-radius: 20px;
+  margin-left: 4px;
+  border: 0;
+  color: white;
+  background-color: #615b56;
+  cursor: pointer;
+  box-shadow: 5px 5px 14px #798076;
+}
+#addTask:hover {
+  background-color: rgb(222, 195, 195);
+}
+#container {
+  background-color: #48505b77;
+  padding: 20px;
+  border: 4px solid #060000;
+  border-radius: 20px;
+  width: 600px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 20px black;
+}
+#clear-div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin: 5px;
+}
+#clear-btn {
+  cursor: pointer;
+  height: 20px;
+  font-weight: 600;
+  color: rgb(25, 0, 100);
+  font-family: "Times New Roman", Times, serif;
+}
+#clear-btn:hover {
+  text-shadow: 2px 4px 2px rgb(255, 255, 255);
+}
+#labelDiv {
+  width: 298.5px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#labelDiv label {
+  font-weight: 600;
+}
